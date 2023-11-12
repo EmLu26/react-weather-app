@@ -49,3 +49,9 @@
   position: relative;
   top: -34px;
 }
+
+.WeatherForecast .daily-weather-icon {
+  height: 40px;
+  width: 40px;
+  margin-top: -10px;
+}
