@@ -1,0 +1,16 @@
+.celsius-Unit {
+  padding-left: 1px;
+  padding-right: 3px;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.celsius-Unit-Min {
+  padding-left: 1px;
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+.pipe {
+  opacity: 0.6;
+}
