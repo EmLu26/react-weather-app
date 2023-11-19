@@ -16,7 +16,7 @@ export default function Weather(props) {
       city: response.data.name,
       country: response.data.sys.country,
       date: new Date(response.data.dt * 1000),
-      localTime: new Date(response.data.timezone),
+      timezone: response.data.timezone,
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
@@ -60,7 +60,7 @@ export default function Weather(props) {
             <div className="col-6">
               <input
                 type="search"
-                placeholder="Enter a city..."
+                placeholder="City..."
                 className="form-control"
                 autoFocus="on"
                 onChange={handleCityChange}
@@ -70,14 +70,14 @@ export default function Weather(props) {
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-primary w-100"
+                className="btn btn-primary w-100 search-button"
               />
             </div>
             <div className="col-4">
               <input
                 type="submit"
-                value="Current Location"
-                className="btn btn-success w-100"
+                value="Current"
+                className="btn btn-success w-100 current-location-button"
                 onClick={getCurrentLocation}
               />
             </div>

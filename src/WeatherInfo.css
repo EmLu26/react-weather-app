@@ -2,3 +2,15 @@
   opacity: 0.8;
   font-size: medium;
 }
+
+@media (max-width: 280px) {
+  .WeatherInfo .weather-details {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  .WeatherInfo img {
+    display: none;
+  }
+}
